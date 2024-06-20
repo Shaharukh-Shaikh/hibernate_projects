@@ -14,8 +14,8 @@ public class App
     {
         Configuration cfg=new Configuration();
         cfg.configure("hibernate.cfg.xml");
-        cfg.addAnnotatedClass(Post.class);
-        cfg.addAnnotatedClass(Comments.class);
+//        cfg.addAnnotatedClass(Post.class);
+//        cfg.addAnnotatedClass(Comments.class);
         SessionFactory sf=cfg.buildSessionFactory();
         
         
@@ -28,14 +28,17 @@ public class App
         Comments c1=new Comments();
         c1.setCom_Id(101);
         c1.setCom_Name("kadakkkk");
+        c1.setPost(p);
         
         Comments c2=new Comments();
         c2.setCom_Id(102);
         c2.setCom_Name("euuuu hawa");
+        c2.setPost(p);
         
         Comments c3=new Comments();
         c3.setCom_Id(103);
         c3.setCom_Name("nice photo");
+        c3.setPost(p);
         
         List<Comments> cm=new ArrayList<Comments>();
         cm.add(c1);

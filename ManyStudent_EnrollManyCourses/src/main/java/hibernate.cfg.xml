@@ -12,14 +12,10 @@
     <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.hbm2ddl.auto">create</property>
-    <property name="hibernate.dialet">org.hibernate.dialet.MySQLDialet</property>
-    <mapping class="com.iant.Post_Comment_OneToMany.Post" />
-     <mapping class="com.iant.Post_Comment_OneToMany.Comments" />
- 
-    	
+    <property name="dialet">org.hibernate.dialet.MySQLDialet</property>
+    <mapping class="com.iant.ManyStudent_EnrollManyCourses.Courses"/>
+    <mapping class="com.iant.ManyStudent_EnrollManyCourses.Student"/>
     
-    
-    
-    
-    </session-factory>
+         </session-factory>
     </hibernate-configuration>
+ 

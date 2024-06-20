@@ -12,7 +12,7 @@ public class Post {
 	
 	private String Post_Name;
 	
-	@OneToMany(mappedBy = "post")
+	@OneToMany(mappedBy="post")
 	List<Comments> com;
 
 	public int getPost_Id() {
